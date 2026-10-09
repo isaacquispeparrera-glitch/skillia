@@ -1,0 +1,215 @@
+/* 1. CONFIGURACIÓN GLOBAL */
+:root {
+    --color-negro: #111111;
+    --color-texto: #1a1a1a;
+    --color-blanco: #ffffff;
+    --color-carmesi: #800020;         
+    --color-carmesi-oscuro: #5a0016;  
+    --color-camel: #c5a059;
+    --fuente-principal: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --transicion: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+    overflow-x: hidden;
+}
+
+/* Forzado de alta legibilidad para textos pequeños y párrafos generales */
+p, span, li, label, input, select {
+    color: var(--color-texto) !important;
+}
+
+/* 2. BARRA SUPERIOR DE CONTACTO (TOP BAR) */
+.top-bar {
+    background-color: var(--color-negro) !important;
+    padding: 8px 0;
+    font-size: 0.88rem;
+}
+
+.top-bar a, 
+.top-bar span, 
+.top-bar div {
+    color: var(--color-blanco) !important;
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+.top-bar a:hover {
+    color: var(--color-camel) !important;
+}
+
+/* 3. ENCABEZADO Y LOGO */
+.navbar-brand {
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px !important;
+    color: var(--color-negro) !important;
+    text-transform: uppercase;
+    transition: var(--transicion);
+}
+
+.navbar-brand:hover {
+    color: var(--color-carmesi) !important;
+}
+
+.nav-link {
+    color: var(--color-negro) !important;
+    font-weight: 600;
+    transition: var(--transicion);
+}
+
+.nav-link:hover {
+    color: var(--color-carmesi) !important;
+}
+
+/* 4. SECCIÓN HERO (PORTADA PRINCIPAL) */
+#inicio {
+    background-color: #f8f9fa !important;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.badge.bg-dark,
+.badge {
+    background-color: var(--color-negro) !important;
+    color: var(--color-camel) !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    padding: 8px 16px !important;
+    letter-spacing: 1px !important;
+    border-radius: 6px !important;
+}
+
+#inicio h1 {
+    color: var(--color-negro) !important;
+    font-weight: 800;
+}
+
+#inicio p {
+    color: #333333 !important;
+    font-size: 1.1rem;
+}
+
+#beneficios {
+    background-color: var(--color-carmesi) !important;
+    padding: 4rem 0;
+}
+
+#beneficios h2,
+#beneficios .lead {
+    color: var(--color-blanco) !important;
+}
+
+/* Tarjetas de Beneficios */
+#beneficios .card {
+    background-color: var(--color-blanco) !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    transition: var(--transicion);
+}
+
+#beneficios .card h3,
+#beneficios .card h4,
+#beneficios .card h5,
+#beneficios .card strong {
+    color: var(--color-negro) !important;
+}
+
+#beneficios .card p,
+#beneficios .card span {
+    color: #444444 !important;
+}
+
+#beneficios .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25) !important;
+}
+
+.btn-dark {
+    background-color: var(--color-negro) !important;
+    border-color: var(--color-negro) !important;
+    color: var(--color-blanco) !important;
+    font-weight: 600;
+    transition: var(--transicion);
+}
+
+.btn-dark:hover {
+    background-color: var(--color-carmesi) !important;
+    border-color: var(--color-carmesi) !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+    color: var(--color-negro) !important;
+    border-color: var(--color-negro) !important;
+    font-weight: 600;
+    transition: var(--transicion);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--color-negro) !important;
+    color: var(--color-blanco) !important;
+    transform: translateY(-2px);
+}
+
+/* 7. TARJETAS DE CURSOS Y SOCIOS */
+.course-card {
+    transition: var(--transicion);
+    border: 1px solid #e0e0e0 !important;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.partner-logo {
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: var(--transicion);
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+footer,
+footer.bg-dark {
+    background-color: var(--color-carmesi-oscuro) !important;
+    color: var(--color-blanco) !important;
+}
+
+footer h3, 
+footer h4, 
+footer strong {
+    color: var(--color-blanco) !important;
+}
+
+footer p, 
+footer li, 
+footer a, 
+footer span, 
+footer div,
+footer .text-secondary,
+footer small {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+footer a:hover {
+    color: var(--color-camel) !important;
+}
+
+footer .border-secondary {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
